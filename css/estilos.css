@@ -18,7 +18,7 @@ body {
 main {
 	max-width: 1000px;
 	width: 90%;
-	margin: 40px auto;
+	margin: 20px auto;
 }
 
 .titulo {
@@ -28,9 +28,7 @@ main {
 	margin: 60px 0;
 }
 
-/*! =================================================*/
-/*! ============= Categorias ============= */
-/*! =================================================*/
+/* Categorias */
 .categorias {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -78,13 +76,13 @@ main {
 	fill: var(--primario);
 }
 
-/*! =================================================*/
-/*! ============= Contenedor Preguntas ============= */
-/*! =================================================*/
+
+/* Contenedor Preguntas */
 .contenedor-preguntas {
 	display: none;
 	grid-template-columns: 1fr;
 	gap: 40px;
+	word-wrap: break-word;
 }
 
 .contenedor-preguntas.activo {
@@ -93,12 +91,13 @@ main {
 
 .contenedor-pregunta {
 	background: #fff;
-	padding: 40px;
+	padding: 80px;
 	border: 2px solid transparent;
 	border-radius: 10px;
 	overflow: hidden;
 	transition: .3s ease all;
 	cursor: pointer;
+	word-wrap: break-word;
 }
 
 .contenedor-pregunta:hover {
@@ -107,11 +106,12 @@ main {
 
 .contenedor-pregunta.activa {
 	border: 2px solid var(--primario);
+	word-wrap: break-word;
 }
 
-/*! =================================================*/
-/*! ============= Preguntas ============= */
-/*! =================================================*/
+
+/* Preguntas */
+
 .pregunta {
 	font-weight: 700;
 	font-size: 20px;
@@ -133,18 +133,26 @@ main {
 	transition: .3s ease all;
 }
 
+.respuesta2 {
+	color: #0000; 
+	line-height: 30px;
+	max-height: 0;
+	opacity: 0;
+	transition: .3s ease all;
+}
+
 .contenedor-pregunta.activa .respuesta {
 	opacity: 1;
 	margin-top: 20px;
 }
 
 .contenedor-pregunta.activa img {
-	transform: rotate(45deg);
+	transform: rotate(auto);
 }
 
-/*! =================================================*/
-/*! ============= Responsive Design ============= */
-/*! =================================================*/
+
+/* Responsive Design */
+
 @media screen and (max-width: 820px){
 	.categorias {
 		grid-template-columns: 1fr 1fr;

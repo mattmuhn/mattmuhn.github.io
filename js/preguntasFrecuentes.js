@@ -13,10 +13,9 @@ preguntas.forEach((pregunta) => {
 			respuesta.style.maxHeight = null;
 		}
 
-		// [Opcional] Reiniciamos las demas preguntas
+		// Reinicio de preguntas
 		preguntas.forEach((elemento) => {
-			// Solamente queremos ejecutar el codigo para las preguntas que no 
-			// sean la pregunta a la que le dimos click.
+			// Sólo se ejecuta con la pregunta que no tenga el click 
 			if(pregunta !== elemento){
 				elemento.classList.remove('activa');
 				elemento.querySelector('.respuesta').style.maxHeight = null;
