@@ -133,21 +133,13 @@ main {
 	transition: .3s ease all;
 }
 
-.respuesta2 {
-	color: #0000; 
-	line-height: 30px;
-	max-height: 0;
-	opacity: 0;
-	transition: .3s ease all;
+.contenedor-pregunta .respuesta img {
+	width: auto;
 }
 
 .contenedor-pregunta.activa .respuesta {
 	opacity: 1;
 	margin-top: 20px;
-}
-
-.contenedor-pregunta.activa img {
-	transform: rotate(auto);
 }
 
 
